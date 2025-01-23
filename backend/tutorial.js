@@ -49,8 +49,55 @@ if(age < 12){
 }
 
 // loops
-let i = 0
-while(i<100){
-    console.log(i)
-    i++
+// let i = 0
+// while(i<100){
+//     console.log(i)
+//     i++
+// }
+
+
+// for(let i=1;i<100;i++){
+//     console.log(i)
+// }
+
+let array = [2,3,4,53,34,2]
+
+// for(arr in array){
+//     console.log(array[arr])
+// }
+
+for(let arr of array){
+    console.log(arr)
 }
+
+//switch statement
+let day = 3;
+let dayName;
+
+switch(day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+
+console.log(dayName);  
