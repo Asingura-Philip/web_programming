@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dynamic application</title>
-
+    
     <style>
         body{
             background-color: aqua;
@@ -12,17 +12,35 @@
     </style>
     
 </head>
-<body>
+<body id="body">
     <button onclick="alert('hello world')">Hello world</button>
 
     <p id="text">this is the first html,css and javascript fusion</p>
 
-    <button onclick="document.getElementById('text').innerHTML = 'this is my second fusion'">Change text</button>
-
-    <script>
+    <button id="btn">Change text</button>
+    <button id="click">Internal js click</button>
+    <button id="color">Change color</button>
+    <br>
+    <br>
+    <textarea name="colors" id="colorarea"></textarea>
+    <br>
+    <button id="changecolor">Enter</button>
+    <!-- <script>
         function greet(){
             alert('welcome to my dynamic world')
         }
+
+        document.getElementById('click').onclick = function(){
+            alert('button was clicked')
+        }
+
+        document.getElementById('click').mouseover = function(){
+            document.getElementById('click').style.color = "yellow"
+        }
+
     </script>
+     -->
+
+     <script src="/week6/actions/action_it.js"></script>
 </body>
 </html>
