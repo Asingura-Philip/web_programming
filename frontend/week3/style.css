@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* Paragraph Styles */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Video Styles */
+video {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Link Styles */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HR Styles */
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+/* Contact Section Styles */
+.contact p {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+body.dark-mode h1, body.dark-mode h2 {
+    color: #8BC34A;
+}
+body.dark-mode p {
+    color: #ddd;
+}
+body.dark-mode table {
+    background-color: #333;
+}
+body.dark-mode th, body.dark-mode td {
+    color: #fff;
+    border-color: #444;
+}
+body.dark-mode a {
+    color: #8BC34A;
+}
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #45a049;
+}
