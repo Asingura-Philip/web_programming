@@ -7,6 +7,10 @@ app.get('/hello',(req,res)=>{
     res.send("hello world")
 })
 
+function requestLogger(req,res,next){
+    console.log(`request method: ${req.method},URL: ${req.url}`)
+    next();
+}
 app.get('*',(req,res)=>{
     res.send('this route does not exist')
 })
