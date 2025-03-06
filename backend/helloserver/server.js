@@ -25,6 +25,15 @@ app.get("/hello", (req, res) => {
 //     next();
 // }
 
+app.post('/add-user',(req,res)=>{
+    const {name,email} = req.body
+    const sql = `INSERT INTO users(name,email) VALUES(?,?)`
+
+    db.query(sql,[name,email],(error,result)=>{
+        if(error) throw error;
+        res.send("user is added successfully");
+    })
+})
 
 app.get("*", (req, res) => {
   res.send("this route does not exist");
