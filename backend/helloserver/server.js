@@ -9,7 +9,7 @@ app.use(express.json());
 const sql = `CREATE TABLE IF NOT EXISTS users(
             id int AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(15),
-            email VARCHAR(10)
+            email VARCHAR(20)
 )`;
 
 db.query(sql, (err, result) => {
